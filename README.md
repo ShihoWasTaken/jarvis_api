@@ -38,3 +38,15 @@ Une fois le serveur web lancé, l'API et sa documentation sont disponibles à l'
 [http://127.0.0.1:8000/api](http://127.0.0.1:8000/api)
 
 L'interface Swagger disponible a cette adresse permet également de tester les différents endpoints de l'API directement sur la page.
+
+## Tests
+### Lancement des tests fonctionnels
+```sh
+php bin/phpunit
+```
+
+### Création de fixtures
+```sh
+php bin/console hautelook:fixtures:load
+```
+Attention: cela purgera la base de données pour la remplir avec des donnéees factices
